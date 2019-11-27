@@ -1,9 +1,9 @@
 package com.otemainc.inventory.controller.admin;
 
-import com.rafsan.inventory.entity.Invoice;
-import com.rafsan.inventory.entity.Product;
-import com.rafsan.inventory.model.InvoiceModel;
-import com.rafsan.inventory.model.ProductModel;
+import com.otemainc.inventory.entity.Invoice;
+import com.otemainc.inventory.entity.Product;
+import com.otemainc.inventory.model.InvoiceModel;
+import com.otemainc.inventory.model.ProductModel;
 import java.net.URL;
 import java.text.DateFormatSymbols;
 import java.util.Locale;

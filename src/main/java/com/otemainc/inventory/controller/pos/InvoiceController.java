@@ -1,14 +1,14 @@
 package com.otemainc.inventory.controller.pos;
 
-import com.rafsan.inventory.entity.Invoice;
-import com.rafsan.inventory.entity.Item;
-import com.rafsan.inventory.entity.Payment;
-import com.rafsan.inventory.entity.Product;
-import com.rafsan.inventory.entity.Sale;
-import com.rafsan.inventory.model.EmployeeModel;
-import com.rafsan.inventory.model.InvoiceModel;
-import com.rafsan.inventory.model.ProductModel;
-import com.rafsan.inventory.model.SalesModel;
+import com.otemainc.inventory.entity.Invoice;
+import com.otemainc.inventory.entity.Item;
+import com.otemainc.inventory.entity.Payment;
+import com.otemainc.inventory.entity.Product;
+import com.otemainc.inventory.entity.Sale;
+import com.otemainc.inventory.model.EmployeeModel;
+import com.otemainc.inventory.model.InvoiceModel;
+import com.otemainc.inventory.model.ProductModel;
+import com.otemainc.inventory.model.SalesModel;
 import java.net.URL;
 import java.sql.Timestamp;
 import java.util.ResourceBundle;

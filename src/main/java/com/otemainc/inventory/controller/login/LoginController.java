@@ -1,6 +1,6 @@
 package com.otemainc.inventory.controller.login;
 
-import com.rafsan.inventory.model.EmployeeModel;
+import com.otemainc.inventory.model.EmployeeModel;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;

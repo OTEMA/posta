@@ -1,9 +1,8 @@
-package com.otemainc.inventory.controller.category;
+package com.otemainc.inventory.controller.supplier;
 
-import com.otemainc.inventory.entity.Category;
-import com.otemainc.inventory.interfaces.CategoryInterface;
-import static com.otemainc.inventory.interfaces.CategoryInterface.CATEGORYLIST;
-import com.otemainc.inventory.model.CategoryModel;
+import com.otemainc.inventory.entity.Supplier;
+import com.otemainc.inventory.interfaces.SupplierInterface;
+import com.otemainc.inventory.model.SupplierModel;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -16,61 +15,67 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class AddController implements Initializable, CategoryInterface {
-    
+public class AddController implements Initializable, SupplierInterface {
+
     @FXML
-    private TextField typeField;
+    private TextField supplierField, phoneField;
     @FXML
-    private TextArea descriptionArea;
+    private TextArea addressArea;
     @FXML
     private Button saveButton;
-    private CategoryModel categoryModel;
+    private SupplierModel supplierModel;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        categoryModel = new CategoryModel();
+        supplierModel = new SupplierModel();
     }
-    
+
     @FXML
     public void handleCancel(ActionEvent event) {
-        typeField.setText("");
-        descriptionArea.setText("");
+        supplierField.setText("");
+        phoneField.setText("");
+        addressArea.setText("");
     }
-    
+
     @FXML
     public void handleSave(ActionEvent event) {
 
         if (validateInput()) {
 
-            Category category = new Category(
-                    typeField.getText(),
-                    descriptionArea.getText()
+            Supplier supplier = new Supplier(
+                    supplierField.getText(),
+                    phoneField.getText(),
+                    addressArea.getText()
             );
 
-            categoryModel.saveCategory(category);
-            CATEGORYLIST.clear();
-            CATEGORYLIST.addAll(categoryModel.getCategories());
+            supplierModel.saveSuplier(supplier);
+            SUPPLIERLIST.clear();
+            SUPPLIERLIST.addAll(supplierModel.getSuppliers());
 
             ((Stage) saveButton.getScene().getWindow()).close();
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Successful");
-            alert.setHeaderText("Category Created!");
-            alert.setContentText("Category is created successfully");
+            alert.setHeaderText("Employee Created!");
+            alert.setContentText("Employee is created successfully");
             alert.showAndWait();
         }
     }
-    
+
     private boolean validateInput() {
 
         String errorMessage = "";
 
-        if (typeField.getText() == null || typeField.getText().length() == 0) {
-            errorMessage += "No valid name!\n";
+        if (supplierField.getText() == null || supplierField.getText().length() == 0) {
+            errorMessage += "No valid first name!\n";
         }
 
-        if (descriptionArea.getText() == null || descriptionArea.getText().length() == 0) {
-            errorMessage += "No email description!\n";
+        if (phoneField.getText() == null || phoneField.getText().length() == 0) {
+            errorMessage += "No valid phone number!\n";
+        }
+
+        if (addressArea.getText() == null || addressArea.getText().length() == 0) {
+            errorMessage += "No email address!\n";
         }
 
         if (errorMessage.length() == 0) {

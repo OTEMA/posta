@@ -1,8 +1,8 @@
 package com.otemainc.inventory.controller.category;
 
-import com.rafsan.inventory.entity.Category;
-import com.rafsan.inventory.interfaces.CategoryInterface;
-import com.rafsan.inventory.model.CategoryModel;
+import com.otemainc.inventory.entity.Category;
+import com.otemainc.inventory.interfaces.CategoryInterface;
+import com.otemainc.inventory.model.CategoryModel;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;

@@ -1,9 +1,9 @@
 package com.otemainc.inventory.controller.employee;
 
-import com.rafsan.inventory.interfaces.EmployeeInterface;
-import static com.rafsan.inventory.interfaces.EmployeeInterface.EMPLOYEELIST;
-import com.rafsan.inventory.entity.Employee;
-import com.rafsan.inventory.model.EmployeeModel;
+import com.otemainc.inventory.interfaces.EmployeeInterface;
+import static com.otemainc.inventory.interfaces.EmployeeInterface.EMPLOYEELIST;
+import com.otemainc.inventory.entity.Employee;
+import com.otemainc.inventory.model.EmployeeModel;
 import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;

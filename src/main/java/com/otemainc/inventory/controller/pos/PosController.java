@@ -1,9 +1,9 @@
 package com.otemainc.inventory.controller.pos;
 
-import com.rafsan.inventory.entity.Item;
-import com.rafsan.inventory.entity.Payment;
-import com.rafsan.inventory.entity.Product;
-import com.rafsan.inventory.model.ProductModel;
+import com.otemainc.inventory.entity.Item;
+import com.otemainc.inventory.entity.Payment;
+import com.otemainc.inventory.entity.Product;
+import com.otemainc.inventory.model.ProductModel;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.beans.binding.Bindings;
@@ -29,8 +29,8 @@ import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.scene.Node;
-import com.rafsan.inventory.interfaces.ProductInterface;
-import static com.rafsan.inventory.interfaces.ProductInterface.PRODUCTLIST;
+import com.otemainc.inventory.interfaces.ProductInterface;
+import static com.otemainc.inventory.interfaces.ProductInterface.PRODUCTLIST;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.StageStyle;
 

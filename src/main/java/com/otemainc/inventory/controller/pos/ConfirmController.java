@@ -1,7 +1,7 @@
 package com.otemainc.inventory.controller.pos;
 
-import com.rafsan.inventory.entity.Item;
-import com.rafsan.inventory.pdf.PrintInvoice;
+import com.otemainc.inventory.entity.Item;
+import com.otemainc.inventory.pdf.PrintInvoice;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
